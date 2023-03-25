@@ -79,3 +79,13 @@ html {
     height: 120px;
     width: 480px;
 }
+#buscador{
+    z-index: 10;
+    background-color: #ffffff;
+    border: 5px rgb(255, 255, 255) solid;
+    position: absolute;
+    right: 300px;
+    top: calc(40% + 27px);
+    height: 33px;
+    width: 480px;
+}
