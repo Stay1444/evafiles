@@ -1,19 +1,39 @@
 #upload_search_button{
     z-index: 10;
-    background-color: #603b5d9b;
-    border: 5px green solid;
     width: 300px;
     margin-left: auto;
     margin-right: 200px;
     height: 60px;
+    padding: 0 16px;
+    border-radius: 5px;
+    box-shadow: 0 8px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    background-image: linear-gradient(#f0a100 10%,#f70 100%);
 }
+
+    #upload_button{
+        z-index: 10;
+        width: 300px;
+        margin-left: auto;
+        margin-right: 200px;
+        height: 60px;
+        padding: 0 16px;
+        border-radius: 5px;
+        box-shadow: 0 8px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        background-image: linear-gradient(#f0a100 10%,#f70 100%);
+}
+
 #search_bar{
-    background-color: #ffffff;
-    border: 5px rgb(255, 255, 255) solid;
+    background-color: rgb(189, 189, 189);
+    border: 5px rgb(189, 189, 189) solid;
     width: 300px;
     margin-left: auto;
     margin-right: 200px;
     height: 60px;
+    
 }
 
 .content {
