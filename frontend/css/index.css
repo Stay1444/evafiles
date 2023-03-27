@@ -1,4 +1,5 @@
 #search_button{
+    font-family: Genesys;
     z-index: 10;
     width: 300px;
     margin-left: auto;
@@ -13,6 +14,7 @@
 }
 
     #upload_button{
+        font-family: Genesys;
         z-index: 10;
         width: 300px;
         margin-left: auto;
