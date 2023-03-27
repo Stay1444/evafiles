@@ -12,7 +12,7 @@
 
 .titulo {
     font-family: Genesys;
-    font-size: 45px;
+    font-size: 40px;
     margin: 0;
     margin-left: 10px;
     padding-top: 8px; 
@@ -22,9 +22,9 @@
 .titulo-2{
     font-family: Genesys;
     color: #acacac; 
-    font-size: 45px;
+    font-size: 40px;
     margin: 0;
-    margin-left: 10px;
+    margin-left: 2px;
     padding-top: 8px; 
     user-select: none;
 }
