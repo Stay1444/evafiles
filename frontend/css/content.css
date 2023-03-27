@@ -1,0 +1,20 @@
+#upload_search_button{
+    z-index: 10;
+    background-color: #603b5d9b;
+    border: 5px green solid;
+    position: absolute;
+    right: 300px;
+    top: calc(50% + 15px);
+    height: 120px;
+    width: 480px;
+}
+#search_bar{
+    z-index: 10;
+    background-color: #ffffff;
+    border: 5px rgb(255, 255, 255) solid;
+    position: absolute;
+    right: 300px;
+    top: calc(40% + 27px);
+    height: 33px;
+    width: 480px;
+}
