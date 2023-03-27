@@ -22,6 +22,9 @@ document.getElementById("search_bar").addEventListener("input", (e) => {
 });
 
 document.getElementById("upload_button").onclick = (e)=> {
-  window.location='upload.html'
-
-};
+  window.location='upload.html';
+}
+document.getElementsByClass("titulo")[0].onclick = (e)=> {
+  window.location='index.html';
+}
+;
