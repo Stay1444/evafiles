@@ -52,3 +52,16 @@
     width: 50%;
     row-gap: 15px;
 }
+#search_bar{
+    background-color: rgba(255, 255, 255, 0.973);
+    border: 5px rgba(255, 255, 255, 0.699);
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    outline:none;
+    font-family: Genesys;
+    z-index: 10;
+   }
+
+
