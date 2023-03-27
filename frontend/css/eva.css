@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: Genesys;
-    src: url(../css/images/Genesys.ttf);
+    src: url("../css/images/Genesys.ttf");
 }
 
 .barra_de_arriba {
@@ -20,7 +20,7 @@
     
 }
 .titulo {
-    font-family: Genesys; 
+    font-family: Genesys;
     font-size: 45px;
     margin: 0;
     margin-left: 10px;
@@ -45,7 +45,6 @@
 }
 
 html {
-    font: 100% helvetica, serif;
     color: #D85400;
     background-image: url("../css/images/propuesta\ 1.png");
     background-repeat: no-repeat;
@@ -56,7 +55,6 @@ html {
 }
   .pie{
     background-color: #ffffff1c; 
-    font: 100% helvetica;
     color: #9e9e9e;
     width: 100%;
     height: 70px;
@@ -78,7 +76,7 @@ html {
     cursor:pointer;
 
 }
-    #upload_button{
+#upload_search_button{
     z-index: 10;
     background-color: #603b5d9b;
     border: 5px green solid;
@@ -88,7 +86,7 @@ html {
     height: 120px;
     width: 480px;
 }
-#buscador{
+#search_bar{
     z-index: 10;
     background-color: #ffffff;
     border: 5px rgb(255, 255, 255) solid;
