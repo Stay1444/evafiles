@@ -18,4 +18,10 @@ document.getElementById("search_bar").addEventListener("input", (e) => {
     document.getElementById("upload_button").style.display = "inline";
     document.getElementById("search_button").style.display = "none";
   }
+
 });
+
+document.getElementById("upload_button").onclick = (e)=> {
+  window.location='upload.html'
+
+};
