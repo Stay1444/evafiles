@@ -1,5 +1,7 @@
 #search_button{
     font-family: Genesys;
+    font-size: 25px;
+    color:rgba(240, 248, 255, 0.699);
     z-index: 10;
     width: 300px;
     margin-left: auto;
@@ -15,6 +17,8 @@
 
     #upload_button{
         font-family: Genesys;
+        font-size: 25px;
+        color:rgba(240, 248, 255, 0.699);
         z-index: 10;
         width: 300px;
         margin-left: auto;
@@ -25,12 +29,12 @@
         box-shadow: 0 8px 1px -2px rgba(0, 0, 0, 0.2),
         0 2px 2px 0 rgba(0, 0, 0, 0.14),
         0 1px 5px 0 rgba(0, 0, 0, 0.12);
-        background-image: linear-gradient(#a3da58 10%,#608f1e 100%);
+        background-image: linear-gradient(#75ac27 10%,#41680a 100%);
 }
 
 #search_bar{
-    background-color: rgb(189, 189, 189);
-    border: 5px rgb(189, 189, 189) solid;
+    background-color: rgba(240, 248, 255, 0.973);
+    border: 5px rgba(240, 248, 255, 0.699);
     width: 300px;
     margin-left: auto;
     margin-right: 200px;
