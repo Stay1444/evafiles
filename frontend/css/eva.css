@@ -27,7 +27,16 @@
     padding-top: 8px; 
     user-select: none;
     
+}
 
+.titulo-2{
+    font-family: Genesys;
+    color: #acacac; 
+    font-size: 45px;
+    margin: 0;
+    margin-left: 10px;
+    padding-top: 8px; 
+    user-select: none;
 }
 .fondo{
     height: 100%;
