@@ -8,8 +8,6 @@ document.getElementById("search_bar").addEventListener("keydown", (e) => {
     document.getElementById("upload_button").style.display = "none";
     document.getElementById("search_button").style.display = "inline";
   }
-  e.getElementById("search_button").value = "buscar";
-  console.log("funciona");
 });
 
 document.getElementById("search_bar").addEventListener("input", (e) => {
@@ -20,5 +18,4 @@ document.getElementById("search_bar").addEventListener("input", (e) => {
     document.getElementById("upload_button").style.display = "inline";
     document.getElementById("search_button").style.display = "none";
   }
-  e.getElementById("search_button").value = "subir";
 });
