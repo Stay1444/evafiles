@@ -1,16 +1,16 @@
-document.getElementById("upload_search_button").style.display = "none";
+document.getElementById("search_button").style.display = "none";
 
-document.getElementById("search_bar").addEventListener("change", (e)=> {
+document.getElementById("search_bar").addEventListener("keydown", (e)=> {
     if (e.target.value=="")
     {
         document.getElementById("upload_button").style.display = "inline";
-        document.getElementById("upload_search_button").style.display = "none";
+        document.getElementById("search_button").style.display = "none";
     }
     else {
         document.getElementById("upload_button").style.display = "none";
-        document.getElementById("upload_search_button".syle.display = "inline");
+        document.getElementById("search_button").style.display = "inline";
     }
-    e.getElementById("upload_search_button").value="buscar"
+    e.getElementById("search_button").value="buscar"
 console.log("funciona")
 
 })
