@@ -1,4 +1,4 @@
-#search_bar{
+#filename{
     background-color: rgba(255, 255, 255, 0.973);
     border: 5px rgba(255, 255, 255, 0.699);
     width: 300px;
@@ -7,29 +7,39 @@
     height: 30px;
     outline:none;
 }
-
-    #upload_button{
-        font-family: Genesys;
-        z-index: 10;
-        width: 300px;
-        margin-left: auto;
-        margin-right: 200px;
-        height: 60px;
-        padding: 0 16px;
-        border-radius: 5px;
-        box-shadow: 0 8px 1px -2px rgba(0, 0, 0, 0.2),
-        0 2px 2px 0 rgba(0, 0, 0, 0.14),
-        0 1px 5px 0 rgba(0, 0, 0, 0.12);
-        background-image: linear-gradient(#a3da58 10%,#608f1e 100%);
+#description{
+    background-color: rgba(255, 255, 255, 0.973);
+    border: 5px rgba(255, 255, 255, 0.699);
+    width: 300px;
+    margin-left: auto;
+    margin-right: 200px;
+    height: 30px;
+    outline:none;
 }
-
 .content {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
 }
-
+#custom_url{
+    background-color: rgba(255, 255, 255, 0.973);
+    border: 5px rgba(255, 255, 255, 0.699);
+    width: 300px;
+    margin-left: auto;
+    margin-right: 200px;
+    height: 30px;
+    outline:none;
+}
+#jsonbtn{
+    background-color: rgba(255, 255, 255, 0.973);
+    border: 5px rgba(255, 255, 255, 0.699);
+    width: 300px;
+    margin-left: auto;
+    margin-right: 200px;
+    height: 30px;
+    outline:none;
+}
 .left {
     height: 100%;
     width: 50%;
