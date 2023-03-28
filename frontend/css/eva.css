@@ -17,6 +17,7 @@ html {
     background-size: cover;
     min-height: 100%;
     overflow: hidden;
+    
 }
 
 .pagina {
@@ -28,4 +29,6 @@ html {
     left: 0px;
     display: flex;
     flex-direction: column;
+   
+            
 }

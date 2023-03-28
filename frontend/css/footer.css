@@ -8,6 +8,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background: linear-gradient(45deg,rgba(255, 0, 0, 0.171),rgba(0, 0, 255, 0.185),rgba(0, 128, 0, 0.144),rgba(0, 0, 0, 0.281));
+    background-size: 400% 400%;
+    animation: cambiar 10s ease-in-out infinite;
+  
 }
 
 .footer > a{
@@ -21,4 +25,10 @@
     font-size: 18px;
     color: #D85400;
     cursor:pointer;
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
 }
