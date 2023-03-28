@@ -87,11 +87,11 @@ public sealed class EvaFileController : Controller
         return File(stream, contentType ?? "application/octet-stream");
     }
 
-    [HttpGet("search")]
-    public async Task<IActionResult> SearchRequest([FromBody] QueryModel query)
+    [HttpPost("search")]
+    public async Task<IActionResult> SearchRequest([FromForm] QueryModel query)
     {
-        var files = await _dbContext.Files.Where(x => x.Name.ToLower().Contains(query.query.ToLower())).OrderByDescending(x => x.DownloadCount).ToListAsync();
+        var files = await _dbContext.Files.Where(x => x.Name.ToLower().Contains(query.Query.ToLower())).OrderByDescending(x => x.DownloadCount).ToListAsync();
 
-        return Ok(files);
+        return Json(files);
     }
 }
