@@ -24,22 +24,32 @@
                 <!--
                     buscador archivo local, nombre,descripción, tiempo hasta que se borre, nombre para enlace personalizado
                 -->
-                <p><input type="file" id="myFile" name="filename"></p>
-                <p>Name:<input id="filename" type="text"></input></p>
-                <p>Description:<input id="description" type="text"></input></p>
-                <p>Custom URL:<input id="custom_url" type="text"></input></p>
+                <table>
+                    <thead>
+                        <tr> 
+                            <td>Name:</td><td><input id="filename" type="text"></input></td>
+                            <td>Description:</td><td><input id="description" type="text"></input></td>
+                            <td>Custom URL:</td><td><input id="custom_url" type="text"></input></td>
+                        </tr>
+                    </thead>
                 <!--
                     <p>Available time:<input type="checkbox" id="1day" >1 day</input></p> 
                     <p><input type="checkbox" id="1week" >1 week</input></p>
                     <p><input type="checkbox" id="1month" >1 month</input></p>
                 -->
-                <label for="available_time" id="available_time_label">Available time:</label>
-                <select name="time" id="available_time">
-                    <option value="1day" selected>1 day</option>
-                    <option value="1week">1 week</option>
-                    <option value="1month">1 month</option>
-                </select>
-                <button id="jsonbtn" >Upload</button>
+                    <tbody>
+                        <tr>
+                            <td><label for="available_time" id="available_time_label">Available time:</label></td>
+                            <td><select name="time" id="available_time">
+                            <option value="1day" selected>1 day</option>
+                            <option value="1week"></td><td>1 week</option>
+                            <option value="1month">1 month</option></td>
+                            </select>
+                            <td><input type="file" id="myFile" name="filename"></td>
+                            <td><button id="jsonbtn" >Upload</button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             
         </div>
