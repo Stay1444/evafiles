@@ -25,6 +25,15 @@ builder.WebHost.UseKestrel(x =>
     x.Limits.MaxRequestBodySize = long.MaxValue;
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "cors",
+        c =>
+        {
+            c.AllowAnyOrigin();
+        });
+});
+
 
 var app = builder.Build();
 
@@ -34,7 +43,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("cors");
 app.MapControllers();
 
 {
