@@ -20,7 +20,7 @@ jsonbtn.onclick = () => {
 
     formData.append('file', fileInput.files[0]);
 
-    fetch("http://127.0.0.1:5000/file/upload", {
+    fetch("http://192.168.0.190:5000/file/upload", {
         method: "POST",
         body: formData
     }).then(x => {
