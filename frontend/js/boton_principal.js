@@ -1,5 +1,6 @@
 document.getElementById("search_button").style.display = "none";
 
+
 document.getElementById("search_bar").addEventListener("keydown", (e) => {
   if (e.target.value.trim() == "") {
     document.getElementById("upload_button").style.display = "inline";
@@ -29,5 +30,5 @@ document.getElementsByClassName("titulo")[0].onclick = (e)=> {
 }
 document.getElementById("search_button").onclick = (e) =>{
   //window.location='search_result.html';
-  window.location = 'search_result.html?v=' + document.getElementById('search_bar').value;
+  window.location = 'search_result.html?s=' + document.getElementById('search_bar').value;
 }
