@@ -1,3 +1,9 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace EvaFiles.Models;
 
-public record QueryModel(string query);
+public class QueryModel
+{
+    [Required]
+    public string Query { get; set; }
+}
