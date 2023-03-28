@@ -6,9 +6,9 @@ document.getElementById("search_bar").placeholder = myParam;
 setTimeout(() => {
         const form  = new FormData();
 
-        form.append("Query", myParam);
+        form.append("query", myParam);
 
-        console.log(form)
+        console.log(form.entries())
         
         fetch("http://192.168.0.190:5000/file/search", {
                 method: "POST",
