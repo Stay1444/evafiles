@@ -1,18 +1,30 @@
 using System.Net;
+using EvaFiles.Services;
+using EvaFiles.Utils.Configuration;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddHttpClient(SeaweedClient.ClientName,
+    c => c.BaseAddress = new Uri(Environment.GetEnvironmentVariable("SEAWEEDFS_URL") ?? builder.Configuration.GetString("SEAWEEDFS_URL", "http://127.0.0.1:9333")));
+
+
+builder.Services.AddSingleton<SeaweedClient>();
+
+builder.Services.AddNpgsql<EvaFilesDbContext>(builder.Configuration.GetPostgresConnectionString());
 
 builder.WebHost.UseKestrel(x =>
 {
     x.Listen(IPAddress.Any, 5000);
+    x.Limits.MaxRequestBodySize = long.MaxValue;
 });
+
 
 var app = builder.Build();
 
@@ -23,10 +35,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
 app.MapControllers();
+
+{
+    using var scope = app.Services.CreateScope();
+    var dbContext = scope.ServiceProvider.GetRequiredService<EvaFilesDbContext>();
+    await dbContext.Database.MigrateAsync();
+}
 
 app.Run();
