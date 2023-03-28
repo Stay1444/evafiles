@@ -88,9 +88,9 @@ public sealed class EvaFileController : Controller
     }
 
     [HttpPost("search")]
-    public async Task<IActionResult> SearchRequest([FromForm] QueryModel query)
+    public async Task<IActionResult> SearchRequest([FromForm] QueryModel model)
     {
-        var files = await _dbContext.Files.Where(x => x.Name.ToLower().Contains(query.Query.ToLower())).OrderByDescending(x => x.DownloadCount).ToListAsync();
+        var files = await _dbContext.Files.Where(x => x.Name.ToLower().Contains(model.Query.ToLower())).OrderByDescending(x => x.DownloadCount).ToListAsync();
 
         return Json(files);
     }
