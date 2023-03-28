@@ -12,7 +12,7 @@ jsonbtn.onclick = () => {
     
     formData.append('name', name.value);
     formData.append('description', description.value);
-    formData.append('duration', duration.value);
+    formData.append('duration', available_time.value);
 
     //const fileData = new FileReader().readAsArrayBuffer(fileInput.files[0]);
 
