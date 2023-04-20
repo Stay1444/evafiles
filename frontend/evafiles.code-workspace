@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../web23"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "evafiles"
+	}
+}
